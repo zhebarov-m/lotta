@@ -1,0 +1,101 @@
+.content__banner {
+    display: flex;
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    min-height: 694px;
+
+    .banner__info {
+
+        .info__block {
+            position: absolute;
+            top: 160px;
+            left: 200px;
+            .info__title {
+                font-size: 2.25rem;
+                max-width: 45.75rem;
+                font-weight: 700;
+                text-transform: uppercase;
+
+                span {
+                    color: $accent-color;
+                }
+            }
+
+            .info__text {
+                width: 48.0625rem;
+                font-size: 1.5rem;
+                margin: 1.25rem 0;
+                font-weight: 600;
+            }
+
+            .info__list {
+                font-size: 1.12rem;
+                font-weight: 600;
+                color: #8D8180;
+
+                .list__item:before {
+                    content: '•';
+                }
+            }
+
+            .price__btn {
+                margin-top: 120px;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                button {
+                    padding: 34px 32px;
+                    background-color: #47B58C;
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    color: $white-color;
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+
+                p {
+                    color: #8D8180;
+                    font-size: 16px;
+                    font-weight: 600;
+                    width: 20rem;
+                }
+            }
+
+            #babel {
+                position: absolute;
+                z-index: -10;
+                top: -100px;
+                left: -100px;
+            }
+        }
+
+        #rectangle__bg {
+            position: absolute;
+            bottom: 0;
+            z-index: -27;
+        }
+    }
+
+    .worker__images {
+        width: 100%;
+        position: relative;
+
+        #worker__bg {
+            position: absolute;
+            left: 930px;
+            bottom: 0;
+            z-index: 100;
+        }
+
+        #house__bg {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 800px;
+            height: 572px;
+        }
+    }
+}

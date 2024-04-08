@@ -1,0 +1,116 @@
+hr {
+    height: 100%;
+    width: 2px;
+    background-color: #DFDFDF;
+}
+
+body {
+    font-family: "Raleway", monospace;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    padding: 23px;
+    box-shadow: 0 2px 6px 2px rgba(34, 60, 80, 0.05);
+}
+
+.about__us {
+    display: flex;
+    align-items: center;
+
+    #about__us_one {
+        margin-right: 36px;
+        display: flex;
+        flex-direction: column;
+
+        span {
+            &:first-child {
+                font-size: 32px;
+                line-height: 38px;
+                font-weight: 800;
+                color: $secondary-color;
+            }
+
+            &:last-child {
+                font-size: 16px;
+                line-height: 18px;
+                font-weight: 700;
+                color: $accent-color;
+            }
+        }
+    }
+
+    hr {
+        height: 100%;
+        width: 2px;
+        background-color: $strange-white-color;
+    }
+
+    #about__us_two {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 16px;
+
+        span {
+            font-size: 16px;
+            line-height: 18px;
+            font-weight: 700;
+            color: $secondary-color;
+
+            a {
+                color: green;
+            }
+
+            &:last-child {
+                color: $accent-color;
+            }
+        }
+
+    }
+}
+
+.contacts__\&_social {
+    display: flex;
+    align-items: center;
+
+    .social {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        margin-right: 10px;
+    }
+
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        padding-left: 24px;
+        padding-right: 40px;
+
+        span {
+            &:first-child {
+                color: $secondary-color;
+                font-size: 20px;
+                line-height: 22px;
+                font-weight: 700;
+            }
+
+            &:last-child {
+                color: $accent-color;
+                font-size: 16px;
+                line-height: 18px;
+                font-weight: 600;
+            }
+        }
+    }
+    button {
+        padding: 19px 24px;
+        background-color: $accent-color;
+        color: white;
+    }
+}
+
+.accent__color {
+    color: $accent-color;
+}

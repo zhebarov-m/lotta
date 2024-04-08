@@ -1,5 +1,6 @@
+@charset "UTF-8";
 /* Reset and base styles  */
-@import url("https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   padding: 0px;
   margin: 0px;
@@ -101,7 +102,7 @@ body {
   display: flex;
   justify-content: space-around;
   padding: 23px;
-  box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.2);
+  box-shadow: 0 2px 6px 2px rgba(34, 60, 80, 0.05);
 }
 
 .about__us {
@@ -185,6 +186,133 @@ body {
 
 .accent__color {
   color: #E6A859;
+}
+
+.content__banner {
+  display: flex;
+  position: relative;
+  margin-top: 30px;
+  width: 100%;
+  min-height: 694px;
+}
+.content__banner .banner__info .info__block {
+  position: absolute;
+  top: 160px;
+  left: 200px;
+}
+.content__banner .banner__info .info__block .info__title {
+  font-size: 2.25rem;
+  max-width: 45.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.content__banner .banner__info .info__block .info__title span {
+  color: #E6A859;
+}
+.content__banner .banner__info .info__block .info__text {
+  width: 48.0625rem;
+  font-size: 1.5rem;
+  margin: 1.25rem 0;
+  font-weight: 600;
+}
+.content__banner .banner__info .info__block .info__list {
+  font-size: 1.12rem;
+  font-weight: 600;
+  color: #8D8180;
+}
+.content__banner .banner__info .info__block .info__list .list__item:before {
+  content: "•";
+}
+.content__banner .banner__info .info__block .price__btn {
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.content__banner .banner__info .info__block .price__btn button {
+  padding: 34px 32px;
+  background-color: #47B58C;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 600;
+}
+.content__banner .banner__info .info__block .price__btn p {
+  color: #8D8180;
+  font-size: 16px;
+  font-weight: 600;
+  width: 20rem;
+}
+.content__banner .banner__info .info__block #babel {
+  position: absolute;
+  z-index: -10;
+  top: -100px;
+  left: -100px;
+}
+.content__banner .banner__info #rectangle__bg {
+  position: absolute;
+  bottom: 0;
+  z-index: -27;
+}
+.content__banner .worker__images {
+  width: 100%;
+  position: relative;
+}
+.content__banner .worker__images #worker__bg {
+  position: absolute;
+  left: 930px;
+  bottom: 0;
+  z-index: 100;
+}
+.content__banner .worker__images #house__bg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 800px;
+  height: 572px;
+}
+
+.advantages {
+  padding: 120px 0;
+  background-image: url("/assets/images/shape.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.advantages__wrapper {
+  display: flex;
+  gap: 20px;
+}
+.advantages__wrapper .card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid #CFD6DC;
+  border-radius: 15px;
+  width: fit-content;
+  padding: 28px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(135deg, rgb(255, 255, 255) 34%, rgb(250, 236, 219) 62%, rgb(230, 168, 89) 100%);
+}
+.advantages__wrapper .card__title {
+  color: #534847;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.advantages__wrapper .card__description {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  width: 17rem;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */
