@@ -1,0 +1,47 @@
+.certification {
+
+    .wrapper {
+
+        .certification__title {
+            font-size: 36px;
+            font-weight: 700;
+            color: $secondary-color;
+            text-align: center;
+            padding: 48px 0 42px;
+        }
+
+        .certification-situations {
+            .situations__list {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                gap: 52px;
+
+                .situations__item {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 12px;
+                    text-align: center;
+                    width: fit-content;
+
+                    .item__image {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 118px;
+                        height: 118px;
+                        background-color: #F9F9F9;
+                        border-radius: 50%;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: #8D8180;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -8,7 +8,7 @@
     .banner__info {
 
         .info__block {
-            position: absolute;
+            position: relative;
             top: 160px;
             left: 200px;
             .info__title {
@@ -54,6 +54,13 @@
                     color: $white-color;
                     font-size: 18px;
                     font-weight: 600;
+                    cursor: pointer;
+                    transition: border-radius 0.3s ease-in-out;
+
+                    &:hover {
+                        border-radius: 16px;
+                        background-color: #2fb684;
+                    }
                 }
 
                 p {
@@ -85,7 +92,7 @@
 
         #worker__bg {
             position: absolute;
-            left: 930px;
+            left: 164px;
             bottom: 0;
             z-index: 100;
         }

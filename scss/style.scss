@@ -1,9 +1,15 @@
 @import "variables";
+@import "fonts";
 @import "reset";
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import "header";
-@import "./main-content/banner-section";
-@import "./main-content/advantages-section";
+@import "main-content/banner-section";
+@import "main-content/advantages-section";
+@import "main-content/consultation-section";
+@import "main-content/order-call-section";
+@import "main-content/security-areas";
+@import "main-content/certification-section";
+@import "main-content/group-certification";
+@import "main-content/numbers-section";
 
 .container {
     max-width: 1400px;

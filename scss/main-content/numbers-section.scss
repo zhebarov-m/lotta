@@ -1,0 +1,98 @@
+.numbers {
+
+    .wrapper {
+
+        .text-block {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            .title {
+                font-size: 36px;
+                font-weight: 700;
+                color: $secondary-color;
+            }
+
+            .description {
+                font-size: 20px;
+                font-weight: 600;
+                color: #8D8180;
+            }
+        }
+
+        hr {
+            width: 100%;
+            height: 1px;
+            margin: 20px 0;
+        }
+    }
+
+    .numbers__list {
+        display: grid;
+        grid-template-columns: 540px 475px;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+
+        .numbers__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            background-color: #F9F9F9;
+            border-radius: 16px;
+            padding: 20px;
+
+            &:nth-child(2) {
+                height: 168px;
+
+                p {
+                    border-top: 1px solid #D9D9D9;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+            }
+
+            &:nth-child(4) {
+                height: 168px;
+
+                p {
+                    border-top: 1px solid #D9D9D9;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+            }
+
+            h5 {
+                color: $secondary-color;
+                font-size: 20px;
+                font-weight: 600;
+            }
+
+            span {
+                font-size: 64px;
+                font-weight: 600;
+                color: $accent-color;
+            }
+
+            div {
+                display: flex;
+                align-items: end;
+                gap: 10px;
+            }
+
+            p {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                color: #8D8180;
+                font-size: 18px;
+                font-weight: 600;
+
+                &:before {
+                    content: '•';
+                    font-size: 2rem;
+                    color: $accent-color;
+                }
+            }
+        }
+    }
+}

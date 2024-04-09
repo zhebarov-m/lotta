@@ -1,0 +1,90 @@
+.consultation {
+
+    .consul__info {
+        .consul__title {
+            font-size: 36px;
+            font-weight: 700;
+            color: $secondary-color;
+        }
+
+        .consul__description {
+            font-size: 20px;
+            font-weight: 600;
+            color: #8D8180;
+
+            padding-top: 14px;
+        }
+    }
+
+    .consul__content {
+        display: flex;
+        gap: 20px;
+
+        .consul__list {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            padding-top: 42px;
+            padding-bottom: 42px;
+            width: 720px;
+
+            .list__item {
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
+                padding: 20px;
+                align-items: start;
+                color: #8D8180;
+                font-size: 18px;
+                font-weight: 500;
+                counter-increment: item;
+                border-top: 1px solid #D4D4D4;
+                border-bottom: 1px solid #D4D4D4;
+
+                &:hover {
+                    border-top: 1px solid $accent-color;
+                    border-bottom: 1px solid $accent-color;
+                    background-color: #FFF7EE;
+                }
+
+                p {
+                    display: flex;
+                    align-items: start;
+                    gap: 6px;
+
+                    &:before {
+                        content: counter(item) '.';
+                    }
+                }
+
+                a {
+                    color: $accent-color;
+                    text-decoration: underline;
+                    margin-left: 1.2rem;
+                }
+            }
+        }
+
+        .list__btn {
+            width: 100%;
+            background-color: $accent-color;
+            border-radius: 16px;
+            padding: 20px 0;
+            color: $white-color;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .document {
+            display: flex;
+            border: 2px solid #CFD6DC;
+            border-radius: 16px;
+            overflow: hidden;
+
+            img {
+                object-fit: contain;
+                padding-right: 10px;
+            }
+        }
+    }
+}
