@@ -109,9 +109,10 @@ body {
         padding: 19px 24px;
         background-color: $accent-color;
         color: white;
+        transition: background-color 0.3s ease-in-out;
 
         &:hover {
-            background-color: #e89e3f;
+            background-color: #d98c2b;
         }
 
         &:active {

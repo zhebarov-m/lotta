@@ -2,6 +2,7 @@
 @import "fonts";
 @import "reset";
 @import "header";
+@import "footer";
 @import "main-content/banner-section";
 @import "main-content/advantages-section";
 @import "main-content/consultation-section";
@@ -10,6 +11,8 @@
 @import "main-content/certification-section";
 @import "main-content/group-certification";
 @import "main-content/numbers-section";
+@import "main-content/fines-section";
+@import "main-content/faq-section";
 
 .container {
     max-width: 1400px;

@@ -1,0 +1,81 @@
+.fines {
+    background-image: url("/assets/images/shape-v2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .wrapper {
+
+        .fines__text-block {
+
+            .fines__title {
+                font-size: 36px;
+                font-weight: 700;
+                color: $secondary-color;
+            }
+
+            .fines__description {
+                font-size: 20px;
+                font-weight: 600;
+                color: #8D8180;
+                padding: 20px 0 32px;
+            }
+        }
+
+        .fines__tables {
+            display: flex;
+            align-items: start;
+            gap: 32px;
+
+            .criminal,
+            .administrative {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                border: 1px solid #CFD6DC;
+                border-radius: 16px;
+                padding: 24px;
+                background-color: $white-color;
+
+                h4 {
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: $secondary-color;
+                }
+
+                #table-one,
+                #table-two {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #8D8180;
+
+                    ul {
+                        li {
+                            display: flex;
+                            gap: 6px;
+
+                            &:before {
+                                content: '–';
+                            }
+                        }
+                    }
+                }
+
+                #table-one {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 28px;
+                    width: 678px;
+                    height: 328px;
+                }
+
+                #table-two {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 32px;
+                    width: 695px;
+                    height: 456px;
+                }
+            }
+        }
+    }
+}
