@@ -30,10 +30,16 @@
             gap: 186px;
 
             .areas__list {
-                width: 610px;
+                width: 680px;
                 padding: 0 32px;
 
                 .list__item {
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: rgba(248, 247, 247, 0.35);
+                    }
+
                     h5 {
                         display: flex;
                         align-items: center;
@@ -54,10 +60,30 @@
                         margin: 12px 0;
                     }
 
-                    p {
+                    .category-desc {
                         font-size: 18px;
                         font-weight: 500;
                         color: #8D8180;
+                    }
+
+                    .hidden-text {
+                        display: none;
+                        padding: 24px 0 12px 12px;
+
+                        p {
+                            padding-bottom: 42px;
+                            font-weight: 500;
+                        }
+
+                        ul {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 6px;
+                        }
+                    }
+
+                    .hidden-text.show {
+                        display: inline-block;
                     }
                 }
             }
