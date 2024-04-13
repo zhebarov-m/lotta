@@ -1149,7 +1149,16 @@ body {
   flex-direction: column;
   gap: 12px;
 }
-.faq .wrapper .faq__content .faq__data-block .inputs-block input {
+.faq .wrapper .faq__content .faq__data-block .inputs-block input:is(.full-name, .phone, .email) {
+  border: 1px solid #CFD6DC;
+  background-color: #FFF;
+  width: 100%;
+  padding: 18px;
+  border-radius: 16px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.faq .wrapper .faq__content .faq__data-block .inputs-block .comment {
   border: 1px solid #CFD6DC;
   background-color: #FFF;
   width: 100%;

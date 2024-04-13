@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ООО "Лотта"</title>
     <link rel="stylesheet" href="./scss/style.css">
+    <link rel="stylesheet" href="./scss/tw.css">
 </head>
 <body>
 <div class="wrapper">
@@ -589,16 +590,16 @@
                                 Укажите контактные данные, с вами свяжется ведущий специалист по охране труда и
                                 бесплатно проконсультирует
                             </p>
-                            <div class="inputs-block">
+                            <form class="inputs-block">
                                 <input placeholder="ФИО" type="text" class="full-name">
-                                <input placeholder="Телефон" type="text" class="full-name">
-                                <input placeholder="Email" type="text" class="full-name">
-                                <input placeholder="Комментарий" type="text" class="full-name">
-                                <button class="btn__submit">
+                                <input placeholder="Телефон" type="text" class="phone">
+                                <input placeholder="Email" type="email" class="email">
+                                <textarea placeholder="Комментарий" class="comment"></textarea>
+                                <button type="submit" class="btn__submit">
                                     Оставить заявку
                                     <img src="/assets/icons/arrow-right.svg" alt="">
                                 </button>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>

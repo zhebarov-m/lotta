@@ -113,7 +113,17 @@
                     flex-direction: column;
                     gap: 12px;
 
-                    input {
+                    input:is(.full-name, .phone, .email) {
+                        border: 1px solid #CFD6DC;
+                        background-color: $white-color;
+                        width: 100%;
+                        padding: 18px;
+                        border-radius: 16px;
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+
+                    .comment {
                         border: 1px solid #CFD6DC;
                         background-color: $white-color;
                         width: 100%;
