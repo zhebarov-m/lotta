@@ -115,7 +115,8 @@ body {
   flex-direction: column;
 }
 .about__us #about__us_one span:first-child {
-  font-size: 32px;
+  font-size: 42px;
+  text-transform: uppercase;
   line-height: 38px;
   font-weight: 800;
   color: #534847;
@@ -710,8 +711,14 @@ body {
   gap: 186px;
 }
 .security-areas .wrapper .areas .areas__list {
-  width: 610px;
+  width: 680px;
   padding: 0 32px;
+}
+.security-areas .wrapper .areas .areas__list .list__item {
+  cursor: pointer;
+}
+.security-areas .wrapper .areas .areas__list .list__item:hover {
+  background-color: rgba(248, 247, 247, 0.35);
 }
 .security-areas .wrapper .areas .areas__list .list__item h5 {
   display: flex;
@@ -730,10 +737,26 @@ body {
   height: 1px;
   margin: 12px 0;
 }
-.security-areas .wrapper .areas .areas__list .list__item p {
+.security-areas .wrapper .areas .areas__list .list__item .category-desc {
   font-size: 18px;
   font-weight: 500;
   color: #8D8180;
+}
+.security-areas .wrapper .areas .areas__list .list__item .hidden-text {
+  display: none;
+  padding: 24px 0 12px 12px;
+}
+.security-areas .wrapper .areas .areas__list .list__item .hidden-text p {
+  padding-bottom: 42px;
+  font-weight: 500;
+}
+.security-areas .wrapper .areas .areas__list .list__item .hidden-text ul {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.security-areas .wrapper .areas .areas__list .list__item .hidden-text.show {
+  display: inline-block;
 }
 
 .certification .wrapper .certification__title {
