@@ -4,7 +4,7 @@
   "description": "website for the Lotta company",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss build -i src/main.scss -o scss/tw.css"
+    "build": "tailwindcss build -i src/main.scss -o scss/tw.css && cp scss/tw.css public/tw.css"
   },
   "repository": {
     "type": "git",
