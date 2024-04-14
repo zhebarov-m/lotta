@@ -204,13 +204,12 @@ body {
 }
 .footer .wrapper {
   display: flex;
-  justify-content: space-between;
   padding: 42px 0 64px;
 }
 .footer .wrapper .footer__about__us {
   display: flex;
   flex-direction: column;
-  margin-right: 160px;
+  margin-right: 240px;
 }
 .footer .wrapper .footer__about__us #footer__about__us_one {
   display: flex;
@@ -265,9 +264,6 @@ body {
   font-size: 16px;
   font-weight: 600;
   padding-top: 20px;
-}
-.footer .wrapper .footer__social-block {
-  margin-right: 260px;
 }
 .footer .wrapper .footer__social-block .number-phone {
   font-size: 20px;
@@ -566,7 +562,7 @@ body {
   overflow: hidden;
   width: 896px;
   height: 465px;
-  background-image: url("../../assets/images/worker.png");
+  background-image: url("../../assets/images/documents/doc_Б-1.8.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

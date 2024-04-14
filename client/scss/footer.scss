@@ -4,13 +4,12 @@
 
     .wrapper {
         display: flex;
-        justify-content: space-between;
         padding: 42px 0 64px;
 
         .footer__about__us {
             display: flex;
             flex-direction: column;
-            margin-right: 160px;
+            margin-right: 240px;
 
             #footer__about__us_one {
                 display: flex;
@@ -81,7 +80,6 @@
         }
 
         .footer__social-block {
-            margin-right: 260px;
 
             .number-phone {
                 font-size: 20px;
