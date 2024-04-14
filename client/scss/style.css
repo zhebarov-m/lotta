@@ -566,7 +566,7 @@ body {
   overflow: hidden;
   width: 896px;
   height: 465px;
-  background-image: url("../../assets/images/documents/doc_Б-1.8.png");
+  background-image: url("../../assets/images/worker.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1073,49 +1073,77 @@ body {
 }
 .faq .wrapper .faq__content .faq__list .faq__item {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   padding: 23px 20px;
   background-color: #F9F9F9;
   border-radius: 16px;
   width: 100%;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
-.faq .wrapper .faq__content .faq__list .faq__item:active {
-  height: 276px;
-  background-color: #FFF8EE;
+.faq .wrapper .faq__content .faq__list .faq__item.active {
+  background-color: #FFF7EE;
 }
-.faq .wrapper .faq__content .faq__list .faq__item:nth-child(2) {
-  display: flex;
-  flex-direction: column;
-  height: 276px;
-  background-color: #FFF8EE;
-}
-.faq .wrapper .faq__content .faq__list .faq__item:nth-child(2) .item__title {
+.faq .wrapper .faq__content .faq__list .faq__item .item__title {
   display: flex;
   justify-content: space-between;
   font-size: 18px;
   font-weight: 600;
   color: #534847;
 }
-.faq .wrapper .faq__content .faq__list .faq__item:nth-child(2) .faq__item_desc {
+.faq .wrapper .faq__content .faq__list .faq__item .faq__item_desc {
+  display: none;
+}
+.faq .wrapper .faq__content .faq__list .faq__item .faq__item_desc.show {
   display: flex;
   flex-direction: column;
   gap: 20px;
   font-size: 16px;
   font-weight: 500;
   color: #8D8180;
+  padding: 12px;
+  line-height: 24px;
 }
-.faq .wrapper .faq__content .faq__list .faq__item:nth-child(2) .faq__item_desc ul li:before {
+.faq .wrapper .faq__content .faq__list .faq__item .faq__item_desc p {
+  font-weight: 600;
+}
+.faq .wrapper .faq__content .faq__list .faq__item .faq__item_desc ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 6px;
+}
+.faq .wrapper .faq__content .faq__list .faq__item .faq__item_desc ul:first-child > li {
+  display: flex;
+  gap: 4px;
+}
+.faq .wrapper .faq__content .faq__list .faq__item .faq__item_desc ul:first-child > li:before {
   content: "•";
-  padding: 0 6px;
+  font-size: 28px;
+}
+.faq .wrapper .faq__content .faq__list .faq__item:nth-child(2) .faq__item_desc > ul > li {
+  display: flex;
+  gap: 4px;
+}
+.faq .wrapper .faq__content .faq__list .faq__item:nth-child(2) .faq__item_desc > ul > li:before {
+  content: "•";
+  font-size: 28px;
+}
+.faq .wrapper .faq__content .faq__list .faq__item:nth-child(6) .faq__item_desc > ul > li {
+  display: flex;
+  gap: 4px;
+}
+.faq .wrapper .faq__content .faq__list .faq__item:nth-child(6) .faq__item_desc > ul > li:before {
+  content: "•";
+  font-size: 28px;
 }
 .faq .wrapper .faq__content .faq__list .faq__item .faq__item_title {
   font-size: 18px;
   font-weight: 600;
   color: #534847;
 }
-.faq .wrapper .faq__content .faq__list .faq__item .plus-icon {
+.faq .wrapper .faq__content .faq__list .faq__item .icon {
   display: flex;
   justify-content: center;
   align-items: center;

@@ -22,47 +22,90 @@
 
                 .faq__item {
                     display: flex;
+                    flex-direction: column;
                     justify-content: space-between;
                     padding: 23px 20px;
                     background-color: #F9F9F9;
                     border-radius: 16px;
                     width: 100%;
                     cursor: pointer;
-                    transition: all 0.3s ease-in-out;
+                    transition: all 0.1s ease-in-out;
 
-                    &:active {
-                        height: 276px;
-                        background-color: #FFF8EE;
+                    &.active {
+                        background-color: #FFF7EE;
                     }
 
-                    &:nth-child(2) {
+                    .item__title {
                         display: flex;
-                        flex-direction: column;
-                        height: 276px;
-                        background-color: #FFF8EE;
+                        justify-content: space-between;
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: $secondary-color;
+                    }
 
-                        .item__title {
-                            display: flex;
-                            justify-content: space-between;
-                            font-size: 18px;
-                            font-weight: 600;
-                            color: $secondary-color;
-                        }
+                    .faq__item_desc {
+                        display: none;
 
-                        .faq__item_desc {
+                        &.show {
                             display: flex;
                             flex-direction: column;
                             gap: 20px;
                             font-size: 16px;
                             font-weight: 500;
                             color: #8D8180;
+                            padding: 12px;
+                            line-height: 24px;
+                        }
 
-                            ul {
-                                li {
-                                    &:before {
-                                        content: '•';
-                                        padding: 0 6px;
-                                    }
+                        p {
+                            font-weight: 600;
+                        }
+
+                        ul {
+
+                            &:first-child > li {
+                                display: flex;
+                                gap: 4px;
+
+                                &:before {
+                                    content: "•";
+                                    font-size: 28px;
+                                }
+                            }
+
+                            display: flex;
+                            flex-direction: column;
+                            gap: 12px;
+                            padding: 6px;
+                        }
+                    }
+
+                    &:nth-child(2) {
+
+                        .faq__item_desc > ul > {
+                            li {
+                                display: flex;
+                                gap: 4px;
+
+                                &:before {
+                                    content: '•';
+                                    font-size: 28px;
+                                }
+                            }
+                        }
+
+                    }
+
+                    &:nth-child(6) {
+
+                        .faq__item_desc > ul > {
+                            li {
+                                display: flex;
+                                gap: 4px;
+
+                                &:before {
+                                    content: '•';
+                                    font-size: 28px;
                                 }
                             }
                         }
@@ -74,7 +117,7 @@
                         color: $secondary-color;
                     }
 
-                    .plus-icon {
+                    .icon {
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -155,4 +198,5 @@
             }
         }
     }
+
 }
