@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 /* Reset and base styles  */
 * {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   border: none;
 }
 
@@ -411,7 +411,7 @@ body {
 
 .advantages {
   padding: 120px 0;
-  background-image: url("/assets/images/shape.png");
+  background-image: url("../../assets/images/shape.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -566,7 +566,7 @@ body {
   overflow: hidden;
   width: 896px;
   height: 465px;
-  background-image: url("/assets/images/documents/doc_Б-1.8.png");
+  background-image: url("../../assets/images/documents/doc_Б-1.8.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -621,7 +621,7 @@ body {
 .order-screen__wrapper {
   position: relative;
   padding: 124px 42px 32px;
-  background-image: url("/assets/images/building-bg.jpg");
+  background-image: url("../../assets/images/building-bg.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -800,7 +800,7 @@ body {
 }
 .group-certification .wrapper {
   position: relative;
-  background-image: url("/assets/images/building-bg.jpg");
+  background-image: url("../../assets/images/building-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -980,7 +980,7 @@ body {
 }
 
 .fines {
-  background-image: url("/assets/images/shape-v2.png");
+  background-image: url("../../assets/images/shape-v2.png");
   background-repeat: no-repeat;
   background-position: center;
 }
